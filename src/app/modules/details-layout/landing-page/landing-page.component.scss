@@ -1,0 +1,94 @@
+.top-section-main-container {
+    justify-content: space-between;
+
+    .count-main-cont {
+        .right-border {
+            border-right: 2px solid #e8ebe9;
+        }
+
+        .count-ind-box {
+            border: 1px solid #000000 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+
+            .count {
+                font-size: 33px;
+                color: #47C1BF;
+                padding-bottom: 15px;
+            }
+
+            .sub-title {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .status-container {
+        padding: 10px;
+        background-color: white;
+
+        .status-title {
+            font-size: 12px;
+        }
+
+        .unassign {
+            background-color: #E46766;
+        }
+
+        .assign {
+            background-color: #EDBE72;
+        }
+
+        .tagged {
+            background-color: #C5DF8F;
+        }
+
+        .trained {
+            background-color: #90C18D;
+        }
+
+        .status-per {
+            height: 16px;
+        }
+
+        .status-text {
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        .status-icon {
+            height: 14px;
+            width: 14px;
+            display: inline-block;
+        }
+    }
+
+    .assigne-main-cont {
+        background-color: white;
+        padding: 10px;
+    }
+
+
+    .tab-group-container {
+        margin-top: 20px;
+
+        .form-main-cont {
+            margin: 40px 10%;
+
+            .basic-info-section {
+                padding: 10px 10px 0 10px;
+                margin: 10px 0 20px 0;
+                background-color: white;
+                justify-content: space-around;
+            }
+
+            .basic-form-field {
+                width: 100%;
+            }
+        }
+    }
+}
+

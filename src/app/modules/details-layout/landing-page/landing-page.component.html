@@ -1,0 +1,212 @@
+<div class="header-section">
+<div class="row header-inside-cont">
+    <div class="col-lg-4">
+        <span class="fa fa-arrow-left"></span>
+        <span style="padding-left: 5px;">Vendor Contracts  ></span>
+        <span style="font-weight: bold;"> Fixed Price Contracts – English</span>
+    </div>
+    <div class="col-lg-5 header-tag-cont">
+        <span class="header-tag">Assigned</span>
+    </div>
+    <div class="col-lg-3 header-btns">
+        <button class="header-btn-secnd">Cancel</button>
+        <button class="header-btn-prime">Save</button>
+    </div>
+</div>
+<hr>
+</div>
+
+<div class="row top-section-main-container">
+    <div class="col-lg-5 row count-main-cont">
+        <div class="col-lg-3 count-ind-box right-border">
+            <span class="count">18</span>
+            <span class="sub-title">Intents</span>
+        </div>
+        <div class="col-lg-3 count-ind-box right-border">
+            <span class="count">256</span>
+            <span class="sub-title">Entities</span>
+        </div>
+        <div class="col-lg-3 count-ind-box right-border">
+            <span class="count">12</span>
+            <span class="sub-title">Documents</span>
+        </div>
+        <div class="col-lg-3 count-ind-box">
+            <span class="count">232</span>
+            <span class="sub-title">Sentences Identified</span>
+        </div>
+    </div>
+
+    <div class="col-lg-4 status-container">
+        <span class="status-title">Documents Status</span>
+        <div class="row" style="margin: 10px 0;">
+            <div class="col-lg-3 status-per unassign"></div>
+            <div class="col-lg-3 status-per assign"></div>
+            <div class="col-lg-3 status-per tagged"></div>
+            <div class="col-lg-3 status-per trained"></div>
+        </div>
+        <div class="row" style="margin: 0;">
+            <div class="col-lg-3">
+                <span class="status-icon unassign"></span><span class="status-text">Unassigned</span>
+            </div>
+            <div class="col-lg-3">
+                <span class="status-icon assign"></span><span class="status-text">Assigned</span>
+            </div>
+            <div class="col-lg-3">
+                <span class="status-icon tagged"></span><span class="status-text">Tagged</span>
+            </div>
+            <div class="col-lg-3">
+                <span class="status-icon trained"></span><span class="status-text">Trained</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 assigne-main-cont">
+<div class="row" style="padding-bottom: 10px;">
+    <div class="col-lg-4">Assigne</div>
+    <div class="col-lg-4">Docs</div>
+    <div class="col-lg-4">Sentences</div>
+</div>
+<div class="row">
+    <div class="col-lg-4">John Doe</div>
+    <div class="col-lg-4">6</div>
+    <div class="col-lg-4">74</div>
+</div>
+<div class="row">
+    <div class="col-lg-4">Michelle.R</div>
+    <div class="col-lg-4">4</div>
+    <div class="col-lg-4">Assigne</div>
+</div>
+<div class="row">
+    <div class="col-lg-4">Greg.Stevert</div>
+    <div class="col-lg-4">2</div>
+    <div class="col-lg-4">20</div>
+</div>
+    </div>
+
+    <div class="tab-group-container">
+        <mat-tab-group>
+            <mat-tab label="INTENTS"> 
+                
+                <form [formGroup]="detailsForm">
+                   <div class="form-main-cont">
+                    <span>Basic Information</span>
+                    <div class="row basic-info-section">
+                        <div class="col-lg-6 col-md-4 col-sm-6">
+                          <mat-form-field class="basic-form-field" appearance="fill">
+                            <mat-label>Model Name</mat-label>
+                            <input type="text" matInput placeholder="Model Name" formControlName="modelName">
+                          </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Model Description</mat-label>
+                              <input type="text" matInput placeholder="Model Description" formControlName="modelDesc">
+                            </mat-form-field>
+                          </div>
+                       
+                      </div>
+
+                      <span>Parameters</span>
+                    <div class="row basic-info-section">
+                        <div style="padding-bottom: 20px;">
+                            <mat-checkbox class="" checked="true">Auto-suggest Convolutional Neural Network (CNN) Parameters </mat-checkbox>
+                            <mat-checkbox class="">Append Section Header </mat-checkbox>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                          <mat-form-field class="basic-form-field" appearance="fill">
+                            <mat-label>Input Layer Dimension</mat-label>
+                            <input type="number" matInput placeholder="Input Layer Dimension" formControlName="inputLayer">
+                          </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Validation to Train Ratio (%)</mat-label>
+                              <input type="number" matInput placeholder="Validation to Train Ratio (%)" formControlName="trainRatio">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Miscellaneous Ratio (%)</mat-label>
+                              <input type="number" matInput placeholder="Miscellaneous Ratio (%)" formControlName="misRatio">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Learning Rate</mat-label>
+                              <input type="number" matInput placeholder="Learning Rate" formControlName="learningRate">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Activation Function</mat-label>
+                              <input type="text" matInput placeholder="Activation Function" formControlName="actFn">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Model Type</mat-label>
+                              <input type="text" matInput placeholder="Model Type" formControlName="modelType">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Epochs</mat-label>
+                              <input type="text" matInput placeholder="Epochs" formControlName="epochs">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Embedding Dimension</mat-label>
+                              <input type="number" matInput placeholder="Embedding Dimension" formControlName="embeddingDim">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Filter Size</mat-label>
+                              <input type="text" matInput placeholder="Filter Size" formControlName="filterSize">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Number of Filters</mat-label>
+                              <input type="text" matInput placeholder="Number of Filters" formControlName="noOfFilters">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Batch Size</mat-label>
+                              <input type="text" matInput placeholder="Batch Size" formControlName="batchSize">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-3 col-md-4 col-sm-6">
+                            <mat-form-field class="basic-form-field" appearance="fill">
+                                <mat-label>Drop (Optional)</mat-label>
+                              <input type="text" matInput placeholder="Drop (Optional)" formControlName="drop">
+                            </mat-form-field>
+                          </div>
+
+                      
+                       
+                      </div>
+                   </div>
+                     
+                 </form>
+            
+            </mat-tab>
+            <mat-tab label="DOCUMENTS">  </mat-tab>
+            <mat-tab label="STATISTICS">  </mat-tab>
+          </mat-tab-group>
+    </div>
+</div>

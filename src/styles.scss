@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.tab-group-container {
+    .mat-mdc-tab.mdc-tab {
+        flex-grow: 0 !important;
+    }
+    .mat-mdc-tab-labels {
+        background-color: white;
+    }
+
+    .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+color: black;
+font-weight: bold;
+    }
+}
+
+.data-table-select-field {
+    .mat-mdc-form-field-subscript-wrapper {
+        display: none;
+    }
+}
+
+.header-section {
+    .header-inside-cont {
+        margin-bottom: 5px;
+
+        .header-tag-cont {
+            display: flex;
+            justify-content: center;
+
+            .header-tag {
+                border-radius: 20px;
+                padding: 5px 10px;
+                background-color: aquamarine;
+                border: 1px solid aqua;
+                font-size: 14px;
+            }
+        }
+
+        .header-btns {
+            display: flex;
+            justify-content: space-between;
+
+            .header-btn-prime {
+                min-width: 150px;
+                border-radius: 4px;
+                border-width: 1px;
+                border-color: #217DF3;
+                border-style: solid;
+                background: #217DF3;
+                padding: 5 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white
+            }
+
+            .header-btn-secnd {
+                min-width: 150px;
+                border-radius: 4px;
+                border-width: 1px;
+               border: none;
+                background: white;
+                padding: 5 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #949393;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.sidenav-main-container {
+    height: 100vh;
+    background-color: aliceblue;
+    .sidenav-slider {
+        height: 100vh;
+        width: 50px;
+        cursor: pointer;
+        .sidenav-list-container {
+            padding: 20px;
+        }
+        .sidenav-list-container:before {
+            content: '';
+            width: 1px;
+            height: 80%;
+            background-color: aqua;
+        }
+
+        .selected-option {
+            color: #0058C9;
+        }
+    }
+}

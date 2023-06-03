@@ -1,0 +1,79 @@
+.table-view-main-cont {
+    .filter-box-main {
+        border: 1px solid #949393;
+        .title {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            border-bottom: 1px solid #949393;
+        }
+        .filter-box-sub {
+            border-bottom: 1px solid #949393;;
+        }
+    }
+
+    .table-head-filter {
+        margin: 0;
+        margin-bottom: 2px;
+        background-color: white;
+       .filter-box {
+        font-weight: bold;
+        background-color: white;
+        color: #949393;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+       } 
+       .sel-box {
+        background-color: #217DF3;
+        color: white;
+       }
+    }
+
+    .selected-filters-section {
+        margin-bottom: 20px;
+        cursor: pointer;
+        .selected-filter {
+           border: 1px solid #949393;
+           border-radius: 15px;
+           padding: 5px 10px;
+           font-size: 12px; 
+           margin: 10px 20px;
+           .close-icon-fill {
+           visibility: hidden;
+           font-size: 13px;
+           }
+        }
+        .selected-filter:hover {
+            background-color: black;
+            color: white;
+            .close-icon-fill {
+                font-size: 16px;
+                visibility: visible;
+                color: black;
+                background-color: #949393;
+                border-radius: 50%;
+               } 
+        }
+        .clear-btn {
+            color: #217DF3;
+            font-weight: 500;
+            font-size: 13px;
+            cursor: pointer;
+            padding-left: 10px;
+        }
+    }
+}
+
+.status-cell-cont {
+    display: flex;
+    justify-content: center;
+
+    .status-cell {
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: aquamarine;
+        border: 1px solid aqua;
+        font-size: 14px;
+    }
+}

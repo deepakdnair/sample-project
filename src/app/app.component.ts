@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-project';
+selectedIndex:number = 0;
+
+  constructor(private route: Router) {
+
+  }
+
+  onChangeView(page: string, index:number) {
+    this.route.navigate([`/${page}`]);
+    this.selectedIndex = index;
+  }
 }
