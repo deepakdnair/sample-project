@@ -1,6 +1,9 @@
 # SampleProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+![sample-project-screenshot-1](https://github.com/deepakdnair/sample-project/assets/33152342/5b056ce8-52a8-4688-8ac8-fa0a3c1cb504)
+![sample-project-screenshot-2](https://github.com/deepakdnair/sample-project/assets/33152342/a550acd0-3254-4745-9dfa-c75de44a20bb)
+
 
 ## Development server
 
